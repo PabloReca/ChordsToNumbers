@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chords To Numbers</title>
+    <style>
+        textarea {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<main class="flex flex-col p-8 gap-4">
+    <header class="mt-2">
+        <h1 class="text-4xl">Chords To Numbers</h1>
+    </header>
+    <section class="flex flex-row gap-4">
+        <h2 class="text-2xl">Selecciona la tonalidad:</h2>
+        <label for="key"></label>
+        <select class="text-2xl" id="key">
+            <option value="C">C</option>
+            <option value="Db">Db</option>
+            <option value="D">D</option>
+            <option value="Eb">Eb</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="Gb">Gb</option>
+            <option value="G">G</option>
+            <option value="Ab">Ab</option>
+            <option value="A">A</option>
+            <option value="Bb">Bb</option>
+            <option value="B">B</option>
+        </select>
+    </section>
+    <section class="flex gap-4 w-full mt-4">
+        <div>
+            <h3>Introduce Acordes</h3>
+            <label for="chords"></label>
+            <textarea id="chords" rows="10" cols="50"></textarea>
+        </div>
+        <div>
+            <h3>Resultado Números</h3>
+            <label for="numbers"></label>
+            <textarea id="numbers" rows="10" cols="50"></textarea>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
